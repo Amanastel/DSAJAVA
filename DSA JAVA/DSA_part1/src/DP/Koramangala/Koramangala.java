@@ -11,6 +11,7 @@ public class Koramangala {
             arr[i] = sc.nextInt();
         }
         System.out.println(koramangala(arr,n));
+        // System.out.println(koramangala(arr,n));
     }
 
     public static int koramangala(int[] arr, int n) {
