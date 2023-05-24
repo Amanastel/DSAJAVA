@@ -4,14 +4,19 @@ import java.util.Scanner;
 
 public class BinarySearch1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int target = sc.nextInt();
-        int[] arr = new int[n];
-        for(int i=0; i<n; i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.println(binarySearch(arr,target));
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int target = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0; i<n; i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        System.out.println(binarySearch(arr,target));
+
+
+        int[] arr2 = {-1,1,2,3,4,5,22,34,56,789};
+        int target = 22;
+        System.out.println(binarySearch(arr2,target));
     }
 
     // return the index of the element if found else return -1
