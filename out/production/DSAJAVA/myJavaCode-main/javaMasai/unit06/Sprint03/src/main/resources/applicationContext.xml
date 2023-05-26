@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <!--  <bean id="c" class="com.masai.Car"/>
+
+    <bean id="B" class="com.masai.Bike"/>
+
+    <bean id="tr" class="com.masai.Travel">
+       &lt;!&ndash; <property name="v" ref="B"/>
+        <property name="numberOFPerson" value="23"/>&ndash;&gt;   &lt;!&ndash;if you use set method then is will call  &ndash;&gt;
+
+        <constructor-arg name="v" ref="c"/>
+        <constructor-arg name="numberOFPerson" value="5"/>
+    </bean>
+
+   &lt;!&ndash; <bean id="md" class="com.masai.MyBusinessClass">
+        <property name="age" value="24"/>
+        <property name="name" value="Aman"/>
+
+    </bean>&ndash;&gt;-->
+
+
+
+
+   <!-- <bean id="aid" class="com.masai.A">
+&lt;!&ndash;        <constructor-arg name="b1" ref="bid"/>&ndash;&gt;
+        <property name="b1" ref="bid"/>
+    </bean>
+
+    <bean id="bid" class="com.masai.B">
+        <constructor-arg name="a1" ref="aid"/>
+    </bean>
+-->
+
+
+
+
+
+<!--        we  -->
+
+<!--
+    <bean id="db" class="com.we.DAOBean" />
+
+
+    <bean id="sb" class="com.we.ServiceBean" >
+        <property name="dao" ref="db"/>
+    </bean>
+
+
+    <bean id="pb" class="com.we.PresentationBean" >
+        <property name="service" ref="sb"/>
+    </bean>
+    -->
+
+<!--    same but byName-->
+
+   <!-- <bean id="dao" class="com.we.DAOBean" />
+
+    <bean id="service" class="com.we.ServiceBean" autowire="byName"/>
+
+    <bean id="pb" class="com.we.PresentationBean" autowire="byName"/>
+
+-->
+
+<!--    same but byType-->
+  <!--  <bean id="db" class="com.we.DAOBean" />
+
+    <bean id="sb" class="com.we.ServiceBean" autowire="byType"/>
+
+    <bean id="pb" class="com.we.PresentationBean" autowire="byType" />
+
+-->
+
+  <!--  <bean id="d1" class="com.we.Demo" autowire="constructor" />
+
+    <bean id="a5" class="com.we.A"/>
+
+    <bean id="a1" class="com.we.A" />
+
+    <bean id="b5" class="com.we.B" />
+-->
+
+
+
+
+
+<!--    we02-->
+
+<!--
+    <bean id="s1" class="com.we02.Student">
+
+        <constructor-arg name="roll" value="100" />
+        <constructor-arg name="name" value="Ram" />
+        <constructor-arg name="marks" value="780" />
+    </bean>
+
+
+    <bean id="s2" class="com.we02.Student">
+
+        <constructor-arg name="roll" value="101" />
+        <constructor-arg name="name" value="Ramesh" />
+        <constructor-arg name="marks" value="680" />
+    </bean>
+
+    <bean id="s3" class="com.we02.Student">
+
+        <constructor-arg name="roll" value="102" />
+        <constructor-arg name="name" value="Sunil" />
+        <constructor-arg name="marks" value="880" />
+    </bean>
+
+
+    <bean id="cl1" class="com.we02.Collage">
+
+        <constructor-arg name="collageName" value="NIT"/>
+
+        <property name="students">
+
+            <list>
+
+                <ref bean="s1" />
+                <ref bean="s2" />
+                <ref bean="s3" />
+
+            </list>
+
+        </property>
+    </bean>
+
+
+
+
+
+    <bean id="aid" class="com.we02.A">
+        <property name="names">
+
+            <list>
+                <value>Delhi</value>
+                <value>Chennai</value>
+                <value>Kolkata</value>
+                <value>Mumbai</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="aid2" class="com.we02.A2">
+
+        <property name="theSet">
+            <set>
+                <value>Red</value>
+                <value>Blue</value>
+                <value>White</value>
+                <value>Green</value>
+            </set>
+        </property>
+    </bean>
+
+-->
+
+<!--    we03-->
+
+    <bean id="s1" class="com.we03.Student">
+        <constructor-arg name="roll" value="100"/>
+        <constructor-arg name="name" value="Raj"/>
+        <constructor-arg name="marks" value="700"/>
+    </bean>
+
+    <bean id="s2" class="com.we03.Student">
+        <constructor-arg name="roll" value="102"/>
+        <constructor-arg name="name" value="Simran"/>
+        <constructor-arg name="marks" value="720"/>
+    </bean>
+
+    <bean id="s3" class="com.we03.Student">
+        <constructor-arg name="roll" value="104"/>
+        <constructor-arg name="name" value="Rajesh"/>
+        <constructor-arg name="marks" value="750"/>
+    </bean>
+
+
+    <bean id="aid" class="com.we03.A">
+        <property name="theMap">
+            <map>
+                <entry key-ref="s1" value="NIT"/>
+                <entry key-ref="s2" value="GIET"/>
+                <entry key-ref="s3" value="AMITY"/>
+            </map>
+        </property>
+    </bean>
+
+
+
+    <bean id="a1" class="com.we03.A2" init-method="mySetup">
+        <property name="message" value="Welcome to Spring.."/>
+    </bean>
+
+
+
+
+
+
+</beans>
