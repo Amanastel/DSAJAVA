@@ -29,4 +29,29 @@ public class maxSumSubarrayOfSizeK {
         return max;
 
     }
+
+
+    /*
+    public static int maxSum(int[] arr, int n, int k) {
+        int start=0;
+        int end = 0;
+        int sum =0;
+        int max = Integer.MIN_VALUE;
+        while(end < n){
+            sum = sum + arr[end];
+            if(end-start+1 < k){
+                end++;
+            }
+            else if(end-start+1 == k){
+                max = Math.max(sum,max);
+                sum = sum - arr[start];
+                start++;
+                end++;
+            }
+
+        }
+        return max;
+
+    }
+     */
 }
