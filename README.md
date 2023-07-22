@@ -1,6 +1,4 @@
 # 💻 My favorite tools and skills
-
-
 <table>
   <tr>
     <td align="center" width="96">
