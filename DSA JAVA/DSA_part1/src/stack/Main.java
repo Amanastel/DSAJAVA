@@ -1,4 +1,4 @@
-// Next Greater Element Ended
+package stack;// Next Greater Element Ended
 // Description
 
 // Given an array of N elements, find the next greater element for each element in the array, print -1 if it does not exits. Refer to the sample I/O for better understanding
@@ -37,6 +37,12 @@
 
 import java.util.*;
 public class Main {
+    public static void main(String[] args) {
+        int n = 4;
+        int[] arr = {1,3,2,4};
+        nextGreaterElement(n, arr);
+
+    }
     public static void nextGreaterElement(int n, int[] arr) {
         Stack<Integer> stack = new Stack<>();
         ArrayList<Integer> temp = new ArrayList<>();
@@ -58,10 +64,5 @@ public class Main {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        int n = 4
-        int[] arr = {1,3,2,4}
-        nextGreaterElement(n, arr);
-        
-    }
+
 }
